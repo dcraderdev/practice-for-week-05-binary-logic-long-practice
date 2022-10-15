@@ -21,9 +21,23 @@ const binaryStringToArray = str => {
   return binary8bitStr.split(',');
 };
 
+
+
+
 const binaryToAscii = str => {
-  // Your code here
+  let bit = binaryStringToArray(str)
+  let newArr = [];
+  for (let i = 0; i < bit.length; i++) {
+    let ele = bit[i];
+    let asc = String.fromCharCode(parseInt(ele,2)) //Convert into ascii
+    newArr.push(asc);
+  }
+  return newArr.join("")
 };
+
+
+
+
 
 /******************************************************************************/
 

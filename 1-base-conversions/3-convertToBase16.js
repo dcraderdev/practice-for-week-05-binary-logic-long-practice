@@ -3,7 +3,17 @@
 /******************************************************************************/
 
 const convertToBase16 = element => {
-  // Your code here
+
+  result =  Number(element).toString(16)
+
+  return `0x` + `${result}`
+
+
+
+//   return `0x${Number(element).toString(16)}`
+// }
+
+
 };
 
 /******************************************************************************/
